@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetri</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="main">
+        <canvas id="board"></canvas>
+        <div class="center">
+          <div>
+            <h1>TETRIS</h1>
+            <p>Score: <span id="score">0</span></p>
+            <p>Lines: <span id="lines">0</span></p>
+            <p>Level: <span id="level">0</span></p>
+            <div>
+              <h3>NEXT_PIECE</h3>
+              <canvas id="next" class="box"></canvas>
+            </div>
+            <div>
+              <h3>HELD_PIECE</h3>
+               <canvas id="hold" class="box"></canvas>
+            </div>
+           
+          </div>
+          <button onclick="play()" class="play-btn">Play</button>
+        </div>
+        <div class="right-column">
+          <h2>Controls:</h2>
+          <p>ROTATE: &#8593;</p>
+          <p>LEFT: &#8592;</p>
+          <p>RIGHT: &#8594;</p>
+          <p>DOWN: &#8595;</p>
+          <p>PAUSE: P</p>
+          <p>HOLD PIECE: C</p>
+          <p>GHOST PEICE: G</p>
+          <p>HARD DROP: Spacebar</p>
+          <p>END: Esc</p>
+        </div>
+   </div>
+</body>
+<script  src="./peice.js"></script>
+<script  src="./board.js"></script>
+<script src="./my_tetris.js"></script>
+<footer>
+2023 is the year the game was created: Tetris © 1985~XXXX Tetris Holding. 
+Tetris logos, Tetris theme song and Tetriminos are trademarks of Tetris Holding. 
+The Tetris trade dress is owned by Tetris Holding. Licensed to The Tetris Company. 
+Tetris Game Design by Alexey Pajitnov. Tetris Logo Design by Roger Dean. 
+All Rights Reserved.
+</footer>
+</html>
